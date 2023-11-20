@@ -5,10 +5,11 @@ import './Signup.css';
 
 
 
-import { FirebaseContext } from '../../store/firebaseContex';
+import { FirebaseContext } from '../../store/Contex';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { collection, addDoc } from 'firebase/firestore';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from 'react-router-dom';
+
 
 
 
