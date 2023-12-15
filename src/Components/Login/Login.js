@@ -1,10 +1,10 @@
 import React, { useState , useContext } from 'react';
 import  {useHistory} from 'react-router-dom'
-import Logo from '../../olx-logo.png';
+// import Logo from '../../olx-logo.png';
 import './Login.css';
 import { Link } from 'react-router-dom';
 import { FirebaseContext } from '../../store/Contex';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import {  signInWithEmailAndPassword } from 'firebase/auth';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -26,7 +26,7 @@ function Login() {
   return (
     <div>
       <div className="loginParentDiv">
-        <img width="200px" height="200px" src={Logo}></img>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/OLX_2019.svg/1200px-OLX_2019.svg.png" alt=""></img>
         <form onSubmit={handleForm}>
           <label htmlFor="fname">Email</label>
           <br />

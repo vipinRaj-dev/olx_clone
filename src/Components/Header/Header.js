@@ -40,10 +40,9 @@ function Header() {
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
-          <span> {user ? `welcome ${user.displayName} `:<Link to='/login'>Login</Link>}</span>
-          <hr />
+          <span> {user ? `Welcome ${user.displayName} `:<Link to='/login' className="logoutbtn">Login</Link>}</span>
         </div>
-        {user && <button onClick={()=>auth.signOut()}>logout</button>}
+        {user && <button className='logoutbtn' onClick={()=>auth.signOut()}>logout</button>}
 
         <div className="sellMenu">
           <SellButton></SellButton>

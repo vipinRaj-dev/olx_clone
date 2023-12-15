@@ -18,11 +18,13 @@ function App() {
     auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         setUser(authUser);
+        // console.log('first');
       } else {
-        setUser(null); 
+        setUser(null);
       }
     });
-  })
+
+  }, [])
   return (
     <div>
       <Router>

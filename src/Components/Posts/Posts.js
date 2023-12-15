@@ -12,7 +12,7 @@ function Posts() {
       .get("https://fakestoreapi.com/products/category/electronics")
       .then((res) => {
         setProducts(res.data);
-        console.log(res);
+        // console.log(res);
       });
     axios
       .get("https://fakestoreapi.com/products/category/women's clothing")

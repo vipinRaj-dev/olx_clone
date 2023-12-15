@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import {useHistory} from 'react-router-dom'
-import Logo from '../../olx-logo.png';
+// import Logo from '../../olx-logo.png';
 import './Signup.css';
 
 
@@ -54,7 +54,7 @@ export default function Signup() {
   return (
     <div>
       <div className="signupParentDiv">
-        <img width="200px" height="200px" src={Logo}></img>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/OLX_2019.svg/1200px-OLX_2019.svg.png"></img>
         <form>
           <label htmlFor="fname">Username</label>
           <br />

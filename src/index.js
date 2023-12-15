@@ -12,9 +12,7 @@ ReactDOM.render(
 
     <FirebaseContextProvider value={FirebaseContextProvider}>
         <Context>
-
             <App />
         </Context>
-
     </FirebaseContextProvider>
     , document.getElementById('root'));
